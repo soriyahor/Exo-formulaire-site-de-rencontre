@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de rencontre</title>
+    <style>
+        input:invalid {
+            border: red solid 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+
+        <fieldset>
+        <label for="Nom">Nom</label>
+        <input type="text" name="Nom" pattern="^[A-Z]+$" minlength="2" maxlength="45" />
+        <br>
+        <br>
+        <label for="Prénom">Prénom</label>
+        <input type="text" name="Prénom" pattern="^[A-Z]{1}[a-z]+" minlength="2" maxlength="45" />
+        <br>
+        <br>
+        <label for="email">Email</label>
+        <input type="email" id="email" pattern="^\S+[@]{1}\S+[.]{1}(fr|com|org|net)$" />
+        
+        <br>
+        <br>
+        <input type="radio" name="sexe" value="Féminin" checked>
+        <label for="féminin">Féminin</label>
+        <br>
+        <br>
+        <input type="radio" name="sexe" value="Masculin"/>
+        <label for="masculin">Masculin</label>
+
+       
+        <br>
+        <br>
+        <label for="pays">Dans quel pays habitez-vous ?</label>
+        <select name="pays" id="pays">
+            <option value="france">FRANCE</option>
+            <option value="espagne">ESPAGNE</option>
+            <option value="italie">ITALIE</option>
+            <option value="angleterre">ANGLETERRE</option>
+            <option value="suisse">SUISSE</option>
+            <option value="allemagne" selected>ALLEMAGNE</option>
+        
+            </select>
+            <br>
+            <br>
+            <label for="metier">Vos domaines d'actvités :</label>
+            <input type="checkbox" name="plombier">Plombier
+            <input type="checkbox" name="electricien">Electricien
+            <input type="checkbox" name="macon">Macon
+            <input type="checkbox" name="carreleur">Carreleur
+            <input type="checkbox" name="menuisier">Menuisier
+            <input type="checkbox" name="couvreur">Couvreur
+            <br><br>
+
+            <label for="pays">Quelles sont vos langues préférées ?</label>
+            <select name="langues" id="langues"multiple>
+                <option value="francais">français</option>
+                <option value="espagnol">espagnol</option>
+                <option value="italien">italien</option>
+                <option value="anglais">anglais</option>
+            </select>    
+          
+
+         </fieldset>
+                
+                <br>
+                <br>
+                <fieldset>
+                <input type="file" name="photo" id="photo" accept="image/png,image/jpeg"/>
+
+
+
+        </fieldset>
+        <br><br>
+        <input type="submit" value="valider"/>
+    </form>
+
+</body>
+
+</html>
